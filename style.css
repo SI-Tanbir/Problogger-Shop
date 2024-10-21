@@ -1,0 +1,175 @@
+body{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+header,header ul{
+    display: flex;
+    justify-content: space-between;
+    gap:1rem;
+    margin-right: 1rem;
+
+}
+header ul{
+    list-style: none;
+    
+}
+header ul li a{
+    text-decoration: none;
+    color:#f10091;
+    
+
+}
+header img{
+    width: 25px;
+}
+.font-page-container{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+.fontpage-camera img{
+    border: 1px solid #F1E4FF;
+    border-radius: 50%;
+   
+}
+
+.primarybtn{
+    
+    display: flex;
+    background-color: #E02C6D;
+    border:none;
+    align-items: center;
+    color:white;
+    border-radius: 30px;
+    padding: 0.3em;
+    font-size: 1rem;
+
+}
+.primarybtn>b{
+    text-align: center;
+    
+}
+.sponser-icons {
+    width: 80%;
+    margin: 0 auto;
+    border: 2px solid #F1E4FF;
+    margin-top: 1rem;
+ 
+
+}
+.sponser-icons ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+   .popular-collection-container>h2{
+text-align: center;
+   }
+.popular-collection-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+}
+
+.featured-products{
+    display:flex;
+    gap:10px;
+}
+
+.join-now-btn {
+    display: flex;
+    background-color: #E02C6D;
+    border: none;
+    align-items: center;
+    color: white;
+    /* border-radius: 30px; */
+    padding: 0.3em;
+    font-size: 1rem;
+    cursor: pointer;
+    
+}
+
+footer{
+    background-color: #0a0826;
+    color:white;
+    text-align: center;
+    /* align-items: center; */
+}
+footer ul{
+    list-style: none;
+    display: flex;
+}
+
+.social-link li a{
+    text-align: center;
+    
+}
+
+
+.featured-image img{
+    width: 90%;
+    
+}
+
+
+
+
+
+/* starting of responsive design from here */
+
+@media screen and (max-width:568px){
+
+
+    .featured-products{
+        flex-direction: column;
+    }
+
+    .popular-collection-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+   
+
+    .sponser-icons{
+        border:none;
+        align-items: center;
+        text-align: center;
+    }
+    .sponser-icons ul{
+        flex-direction: column;
+        
+    }
+
+    .header-title{
+        margin-bottom: 0;
+    }
+    header,header ul{
+        gap:0;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+
+
+    }
+
+    .font-page-container{
+        flex-direction: column;
+    }
+    .fontpage-camera img{
+        width: 100%;
+    }
+
+
+
+}
