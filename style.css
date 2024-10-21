@@ -110,7 +110,7 @@ footer ul{
     display: flex;
 }
 
-.social-link li a{
+.social-link {
     text-align: center;
     
 }
@@ -120,7 +120,9 @@ footer ul{
     width: 90%;
     
 }
-
+.social-link{
+    margin-left: 38vw;
+}
 
 
 
@@ -129,6 +131,11 @@ footer ul{
 
 @media screen and (max-width:568px){
 
+
+
+.social-link{
+    margin-left: 15vw;
+}
 
     .featured-products{
         flex-direction: column;
